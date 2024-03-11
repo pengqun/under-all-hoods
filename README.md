@@ -1,3 +1,3 @@
 # Under All Hoods
 
-Collection of code files and explanations to teach curious geeks about the "under-the-hood" stuff.
+A collection of code files and explanations to help you understand what's going on **under the hood** of everything interesting.
