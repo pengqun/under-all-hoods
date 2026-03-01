@@ -1,8 +1,10 @@
-# Language interperter: under the hood
+# Language Interpreter: Under the Hood
 
-## Implementation: 'lisp-interpreter-norvig.py'
+How does a programming language understand and execute your code? This module walks through a Lisp interpreter written in Python, covering parsing, environments, and evaluation.
 
-Credit
+## Implementation: `lisp-interpreter-norvig.py`
 
-- Artical: [How to Write a (Lisp) Interpreter (in Python)](https://www.norvig.com/lispy.html)
+### Credit
+
+- Article: [How to Write a (Lisp) Interpreter (in Python)](https://www.norvig.com/lispy.html)
 - Original Code: <https://www.norvig.com/lis.py>
