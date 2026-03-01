@@ -15,6 +15,7 @@ The goal is simple: **read the code, understand the concept.** No frameworks, no
 | [Search Engine](search-engine/) | A minimal search engine in Python | [A search engine in 80 lines of Python](https://www.alexmolas.com/2024/02/05/a-search-engine-in-80-lines.html) |
 | [Language Interpreter](language-interpreter/) | A Lisp interpreter written in Python | [How to Write a (Lisp) Interpreter (in Python)](https://www.norvig.com/lispy.html) |
 | [Language Compiler](language-compiler/) | A super tiny JavaScript compiler | [the-super-tiny-compiler](https://github.com/jamiebuilds/the-super-tiny-compiler) |
+| [Key-Value Store](key-value-store/) | A mini Redis server with RESP protocol | [Building a simple Redis server with Python](http://charlesleifer.com/blog/building-a-simple-redis-server-with-python/) |
 
 ## Repository Structure
 
@@ -31,6 +32,10 @@ under-all-hoods/
 │   ├── README.md
 │   ├── tiny-compiler.py
 │   └── test_compiler.py
+├── key-value-store/
+│   ├── README.md
+│   ├── mini-redis.py
+│   └── test_redis.py
 ├── LICENSE
 └── README.md
 ```
@@ -47,7 +52,6 @@ Planned modules, ranked by developer interest and educational value:
 
 | Module | Description | Key Concepts | Reference |
 |--------|-------------|--------------|-----------|
-| Key-Value Store (Redis) | A miniature Redis server with RESP protocol | TCP server, protocol parsing, in-memory data structures, expiry, persistence | [Write your own miniature Redis with Python](http://charlesleifer.com/blog/building-a-simple-redis-server-with-python/) |
 | Version Control (Git) | A minimal Git implementation | Content-addressable storage, SHA hashing, trees, commits, branches | [ugit: Learn Git Internals by Building Git Yourself](https://www.leshenko.net/p/ugit/) |
 | Database (SQLite) | A simple relational database | B-Tree indexing, SQL parsing, storage engine, ACID | [DBDB: Dog Bed Database](http://aosabook.org/en/500L/dbdb-dog-bed-database.html) |
 
