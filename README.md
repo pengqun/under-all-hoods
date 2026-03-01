@@ -25,7 +25,8 @@ under-all-hoods/
 │   └── search-engine-alexmolas.py
 ├── language-interpreter/
 │   ├── README.md
-│   └── lisp-interpreter-norvig.py
+│   ├── lisp-interpreter-norvig.py
+│   └── test_interpreter.py
 ├── language-compiler/
 │   ├── README.md
 │   ├── tiny-compiler.py
