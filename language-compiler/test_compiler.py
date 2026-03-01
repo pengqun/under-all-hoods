@@ -248,6 +248,24 @@ class TestParser:
         with pytest.raises(SyntaxError, match="Unexpected token"):
             parse(tokens)
 
+    def test_unclosed_paren_raises(self):
+        """An unclosed '(' with arguments should raise SyntaxError."""
+        tokens = tokenize("(add 2")
+        with pytest.raises(SyntaxError, match="Missing closing"):
+            parse(tokens)
+
+    def test_open_paren_only_raises(self):
+        """A lone '(' should raise SyntaxError."""
+        tokens = tokenize("(")
+        with pytest.raises(SyntaxError, match="end of input"):
+            parse(tokens)
+
+    def test_open_paren_name_only_raises(self):
+        """'(add' without closing paren should raise SyntaxError."""
+        tokens = tokenize("(add")
+        with pytest.raises(SyntaxError, match="Missing closing"):
+            parse(tokens)
+
 
 # ═══════════════════════════════════════════════════════════════════════════════
 # PHASE 3 — TRANSFORMER TESTS

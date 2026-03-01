@@ -137,7 +137,7 @@ class TargetCallExpression:
 @dataclass
 class ExpressionStatement:
     """Wraps a top-level expression so it becomes a statement (gets a ``;``)."""
-    expression: object = None
+    expression: object
 
 @dataclass
 class TargetProgram:
@@ -256,6 +256,10 @@ def parse(tokens: list[Token]) -> Program:
     def walk():
         """Parse one expression and advance *pos* past it."""
         nonlocal pos
+
+        if pos >= len(tokens):
+            raise SyntaxError("Unexpected end of input")
+
         token = tokens[pos]
 
         # ── Number literal ───────────────────────────────────────────
@@ -273,6 +277,8 @@ def parse(tokens: list[Token]) -> Program:
             pos += 1  # skip '('
 
             # Next token must be the function name
+            if pos >= len(tokens):
+                raise SyntaxError("Unexpected end of input after '('")
             name_token = tokens[pos]
             if name_token.type != "name":
                 raise SyntaxError(
@@ -283,8 +289,13 @@ def parse(tokens: list[Token]) -> Program:
 
             # Collect parameters until we hit ')'
             params: list = []
-            while not (tokens[pos].type == "paren" and tokens[pos].value == ")"):
+            while pos < len(tokens) and not (
+                tokens[pos].type == "paren" and tokens[pos].value == ")"
+            ):
                 params.append(walk())
+
+            if pos >= len(tokens):
+                raise SyntaxError("Missing closing ')'")
 
             pos += 1  # skip ')'
             return CallExpression(name_token.value, params)
