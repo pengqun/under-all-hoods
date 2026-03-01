@@ -17,7 +17,7 @@ from importlib.util import module_from_spec, spec_from_loader
 
 # ── Import the compiler module (filename has a hyphen) ───────────────────────
 _dir = os.path.dirname(os.path.abspath(__file__))
-_path = os.path.join(_dir, "javascript-compiler-jamie.py")
+_path = os.path.join(_dir, "tiny-compiler.py")
 _loader = SourceFileLoader("compiler", _path)
 _spec = spec_from_loader("compiler", _loader)
 compiler_module = module_from_spec(_spec)

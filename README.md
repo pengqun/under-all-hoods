@@ -28,7 +28,7 @@ under-all-hoods/
 │   └── lisp-interpreter-norvig.py
 ├── language-compiler/
 │   ├── README.md
-│   ├── javascript-compiler-jamie.py
+│   ├── tiny-compiler.py
 │   └── test_compiler.py
 ├── LICENSE
 └── README.md

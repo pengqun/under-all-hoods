@@ -106,7 +106,7 @@ The code generator walks the target AST and emits actual code as a string. Each 
 
 ```bash
 cd language-compiler
-python javascript-compiler-jamie.py
+python tiny-compiler.py
 ```
 
 Output:
@@ -140,9 +140,8 @@ python -m pytest test_compiler.py -v
 
 The test suite covers each phase in isolation plus end-to-end compiler tests — 50+ test cases covering normal operation, edge cases, and error handling.
 
-## Implementation: `javascript-compiler-jamie.py`
+## Implementation: `tiny-compiler.py`
 
-### Credit
+### References
 
-- Original Project: [the-super-tiny-compiler](https://github.com/jamiebuilds/the-super-tiny-compiler) by Jamie Kyle
-- This is a complete Python reimplementation for educational purposes
+- [the-super-tiny-compiler](https://github.com/jamiebuilds/the-super-tiny-compiler) by Jamie Kyle — the original concept this implementation is based on
