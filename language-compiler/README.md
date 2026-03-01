@@ -145,3 +145,6 @@ The test suite covers each phase in isolation plus end-to-end compiler tests —
 ### References
 
 - [the-super-tiny-compiler](https://github.com/jamiebuilds/the-super-tiny-compiler) by Jamie Kyle — the original concept this implementation is based on
+- [Let's make a Teeny Tiny compiler](https://austinhenley.com/blog/teenytinycompiler1.html) by Austin Henley — a 3-part tutorial building a BASIC-to-C compiler in Python
+- [Crafting Interpreters](https://craftinginterpreters.com/) by Robert Nystrom — the comprehensive guide to building interpreters and compilers from scratch
+- [Create Your Own Compiler](https://citw.dev/tutorial/create-your-own-compiler) — an interactive tutorial based on the super-tiny-compiler concept, with a clear visitor pattern walkthrough
