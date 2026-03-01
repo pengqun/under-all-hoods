@@ -39,6 +39,35 @@ Each module has its own directory with:
 - A **README** explaining the concept and crediting the original source
 - A **Python implementation** you can read and run
 
+## Roadmap
+
+Planned modules, ranked by developer interest and educational value:
+
+### Tier 1: Most Popular
+
+| Module | Description | Key Concepts | Reference |
+|--------|-------------|--------------|-----------|
+| Key-Value Store (Redis) | A miniature Redis server with RESP protocol | TCP server, protocol parsing, in-memory data structures, expiry, persistence | [Write your own miniature Redis with Python](http://charlesleifer.com/blog/building-a-simple-redis-server-with-python/) |
+| Version Control (Git) | A minimal Git implementation | Content-addressable storage, SHA hashing, trees, commits, branches | [ugit: Learn Git Internals by Building Git Yourself](https://www.leshenko.net/p/ugit/) |
+| Database (SQLite) | A simple relational database | B-Tree indexing, SQL parsing, storage engine, ACID | [DBDB: Dog Bed Database](http://aosabook.org/en/500L/dbdb-dog-bed-database.html) |
+
+### Tier 2: Very Popular
+
+| Module | Description | Key Concepts | Reference |
+|--------|-------------|--------------|-----------|
+| Web Server | An HTTP server from scratch | HTTP protocol, socket programming, routing, concurrency | [A Simple Web Server — 500 Lines or Less](https://aosabook.org/en/500L/a-simple-web-server.html) |
+| Regex Engine | A regular expression engine | NFA/DFA, Thompson's construction, finite automata | [Regular Expression Matching Can Be Simple And Fast](https://swtch.com/~rsc/regexp/regexp1.html) |
+| Container Runtime | A Docker-like container runtime | Linux namespaces, cgroups, chroot, process isolation | [Rubber Docker](https://github.com/Fewbytes/rubber-docker) |
+
+### Tier 3: Classic & Practical
+
+| Module | Description | Key Concepts | Reference |
+|--------|-------------|--------------|-----------|
+| Shell | A Unix shell | fork/exec, pipes, I/O redirection, signal handling | [Write a Shell in Python](https://danishpraka.sh/posts/write-a-shell/) |
+| DNS Resolver | A DNS resolver from scratch | DNS protocol, UDP, recursive resolution, caching | [Implement DNS in a Weekend](https://implement-dns.wizardzines.com/) |
+| Template Engine | A Jinja-like template engine | Template parsing, code generation, sandbox execution | [A Template Engine — 500 Lines or Less](https://aosabook.org/en/500L/a-template-engine.html) |
+| Diff Tool | A diff algorithm implementation | Myers diff algorithm, LCS, dynamic programming | [The Myers Diff Algorithm](https://blog.robertelder.org/diff-algorithm/) |
+
 ## Getting Started
 
 Pick any module that interests you, read its README for context, then dive into the code. Each implementation is self-contained and designed to be understood on its own.
