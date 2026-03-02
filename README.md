@@ -16,6 +16,7 @@ The goal is simple: **read the code, understand the concept.** No frameworks, no
 | [Language Interpreter](language-interpreter/) | A Lisp interpreter written in Python | [How to Write a (Lisp) Interpreter (in Python)](https://www.norvig.com/lispy.html) |
 | [Language Compiler](language-compiler/) | A super tiny JavaScript compiler | [the-super-tiny-compiler](https://github.com/jamiebuilds/the-super-tiny-compiler) |
 | [Key-Value Store](key-value-store/) | A mini Redis server with RESP protocol | [Building a simple Redis server with Python](http://charlesleifer.com/blog/building-a-simple-redis-server-with-python/) |
+| [Version Control](version-control/) | A mini Git with content-addressable storage | [ugit: Learn Git Internals by Building Git Yourself](https://www.leshenko.net/p/ugit/) |
 
 ## Repository Structure
 
@@ -36,6 +37,10 @@ under-all-hoods/
 │   ├── README.md
 │   ├── mini-redis.py
 │   └── test_redis.py
+├── version-control/
+│   ├── README.md
+│   ├── mini-git.py
+│   └── test_git.py
 ├── LICENSE
 └── README.md
 ```
@@ -52,7 +57,6 @@ Planned modules, ranked by developer interest and educational value:
 
 | Module | Description | Key Concepts | Reference |
 |--------|-------------|--------------|-----------|
-| Version Control (Git) | A minimal Git implementation | Content-addressable storage, SHA hashing, trees, commits, branches | [ugit: Learn Git Internals by Building Git Yourself](https://www.leshenko.net/p/ugit/) |
 | Database (SQLite) | A simple relational database | B-Tree indexing, SQL parsing, storage engine, ACID | [DBDB: Dog Bed Database](http://aosabook.org/en/500L/dbdb-dog-bed-database.html) |
 
 ### Tier 2: Very Popular
