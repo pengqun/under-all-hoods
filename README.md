@@ -17,6 +17,7 @@ The goal is simple: **read the code, understand the concept.** No frameworks, no
 | [Language Compiler](language-compiler/) | A super tiny JavaScript compiler | [the-super-tiny-compiler](https://github.com/jamiebuilds/the-super-tiny-compiler) |
 | [Key-Value Store](key-value-store/) | A mini Redis server with RESP protocol | [Building a simple Redis server with Python](http://charlesleifer.com/blog/building-a-simple-redis-server-with-python/) |
 | [Version Control](version-control/) | A mini Git with content-addressable storage | [ugit: Learn Git Internals by Building Git Yourself](https://www.leshenko.net/p/ugit/) |
+| [Database](database/) | A mini relational DB with B-Tree and SQL parser | [DBDB: Dog Bed Database](http://aosabook.org/en/500L/dbdb-dog-bed-database.html) |
 
 ## Repository Structure
 
@@ -41,6 +42,10 @@ under-all-hoods/
 │   ├── README.md
 │   ├── mini-git.py
 │   └── test_git.py
+├── database/
+│   ├── README.md
+│   ├── mini-db.py
+│   └── test_db.py
 ├── LICENSE
 └── README.md
 ```
@@ -52,12 +57,6 @@ Each module has its own directory with:
 ## Roadmap
 
 Planned modules, ranked by developer interest and educational value:
-
-### Tier 1: Most Popular
-
-| Module | Description | Key Concepts | Reference |
-|--------|-------------|--------------|-----------|
-| Database (SQLite) | A simple relational database | B-Tree indexing, SQL parsing, storage engine, ACID | [DBDB: Dog Bed Database](http://aosabook.org/en/500L/dbdb-dog-bed-database.html) |
 
 ### Tier 2: Very Popular
 
