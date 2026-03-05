@@ -18,6 +18,7 @@ The goal is simple: **read the code, understand the concept.** No frameworks, no
 | [Key-Value Store](key-value-store/) | A mini Redis server with RESP protocol | [Building a simple Redis server with Python](http://charlesleifer.com/blog/building-a-simple-redis-server-with-python/) |
 | [Version Control](version-control/) | A mini Git with content-addressable storage | [ugit: Learn Git Internals by Building Git Yourself](https://www.leshenko.net/p/ugit/) |
 | [Database](database/) | A mini relational DB with B-Tree and SQL parser | [DBDB: Dog Bed Database](http://aosabook.org/en/500L/dbdb-dog-bed-database.html) |
+| [Coding Agent](coding-agent/) | A mini coding agent with tool dispatch and agent loop | [learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) |
 
 ## Repository Structure
 
@@ -46,6 +47,10 @@ under-all-hoods/
 │   ├── README.md
 │   ├── mini-db.py
 │   └── test_db.py
+├── coding-agent/
+│   ├── README.md
+│   ├── coding-agent.py
+│   └── test_coding_agent.py
 ├── LICENSE
 └── README.md
 ```
