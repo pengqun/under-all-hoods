@@ -19,6 +19,7 @@ The goal is simple: **read the code, understand the concept.** No frameworks, no
 | [Version Control](version-control/) | A mini Git with content-addressable storage | [ugit: Learn Git Internals by Building Git Yourself](https://www.leshenko.net/p/ugit/) |
 | [Database](database/) | A mini relational DB with B-Tree and SQL parser | [DBDB: Dog Bed Database](http://aosabook.org/en/500L/dbdb-dog-bed-database.html) |
 | [Coding Agent](coding-agent/) | A mini coding agent with tool dispatch and agent loop | [learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) |
+| [Regex Engine](regex-engine/) | A regular expression engine with Thompson's NFA | [Regular Expression Matching Can Be Simple And Fast](https://swtch.com/~rsc/regexp/regexp1.html) |
 
 ## Repository Structure
 
@@ -51,6 +52,10 @@ under-all-hoods/
 │   ├── README.md
 │   ├── coding-agent.py
 │   └── test_coding_agent.py
+├── regex-engine/
+│   ├── README.md
+│   ├── regex-engine.py
+│   └── test_regex_engine.py
 ├── LICENSE
 └── README.md
 ```
@@ -68,7 +73,6 @@ Planned modules, ranked by developer interest and educational value:
 | Module | Description | Key Concepts | Reference |
 |--------|-------------|--------------|-----------|
 | Web Server | An HTTP server from scratch | HTTP protocol, socket programming, routing, concurrency | [A Simple Web Server — 500 Lines or Less](https://aosabook.org/en/500L/a-simple-web-server.html) |
-| Regex Engine | A regular expression engine | NFA/DFA, Thompson's construction, finite automata | [Regular Expression Matching Can Be Simple And Fast](https://swtch.com/~rsc/regexp/regexp1.html) |
 | Container Runtime | A Docker-like container runtime | Linux namespaces, cgroups, chroot, process isolation | [Rubber Docker](https://github.com/Fewbytes/rubber-docker) |
 
 ### Tier 3: Classic & Practical
